@@ -21,25 +21,33 @@ function App() {
 ```
 
 ## Options / Props
-```js
-background // defaults to empty
-textColor // defaults to white or #fff
-fontSize // defaults to 40px
-highlightOnLoad // boolean to show a transition effect over the text on initial load or render
-textShadow // defaults to -20px 10px 10px rgba(0, 0, 0, 0.3), 0 20px 50px rgba(0, 0, 0, 0.3)
-letterSpacing // defaults to -2px to give a little overlapping style
+```markdown
+| Prop name       | Prop Type | Default Value | 
+| --------------- | --------- | ------------- |
+| text            | string    | Content Cell  |
+| background      | string    | empty / null  |
+| textColor       | string    | white         |
+| fontSize        | string    | 40px          |
+| highlightOnLoad | boolean   | false         |
+| textShadow      | string    | -20px 10px 10px rgba(0, 0, 0, 0.3), 0 20px 50px rgba(0, 0, 0, 0.3) |
+| letterSpacing   | string    | -2px          |
 ```
 
 ## Contributing
 This is my first contribution to npm package :)
 Would love you all to contribute to this project, just fork the repo, add your creativity and submit a PR ❤️ :)
 
+## Feedback
+Bugs are logged using the github issue system. To report a bug, simply [open a new issue](https://github.com/vkushal28/react-jumping-text/issues/new)
+
 ## Visuals
 https://github.com/vkushal28/react-jumping-text/assets/17496336/33b82000-d9d8-4ca1-8281-fd6b281ee66a
 
-
-
 ## Authors
 * **Kushal Verma** - *Portfolio* - [here](https://thebeardydeveloper.com](https://kushalverma.vercel.app/))
+
+## References
+- ChatGPT - for obvious reasons
+- [https://davidhellmann.com/](https://davidhellmann.com/)
 
 _**NOTE**_: If animation doesn't work, make sure you have included `import "react-jumping-text/dist/jumpingText.css";` at the top of your imports.
