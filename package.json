@@ -1,6 +1,6 @@
 {
   "name": "react-jumping-text",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A npm package that allows the texts to animate like jumping when hovered, or on initial load",
   "type": "module",
   "main": "dist/index.js",
