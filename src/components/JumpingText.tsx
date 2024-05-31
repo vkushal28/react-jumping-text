@@ -17,16 +17,20 @@ interface PropTypes {
     | "evenly"
     | "stretch"
     | "";
-    customClassName?: string;
+    fontSize?: string;
+    textShadow?: string;
+    letterSpacing?: string;
 }
 
 const JumpingText = ({
     highlightOnLoad = false,
     text,
-    textColor,
-    background,
-    position,
-    customClassName,
+    textColor = "white",
+    background = "white",
+    position = "normal",
+    fontSize = "40px",
+    textShadow = "-20px 10px 10px rgba(0, 0, 0, 0.3), 0 20px 50px rgba(0, 0, 0, 0.3)",
+    letterSpacing = "-2px"
 }: PropTypes) => {
     useEffect(() => {
         const setupJumpingLetters = () => {
@@ -53,8 +57,18 @@ const JumpingText = ({
         setupJumpingLetters();
     }, []);
 
+    const containerStyle = {
+        '--text-color': textColor,
+        '--background-color': background,
+        '--font-size': fontSize,
+        '--letter-spacing': letterSpacing,
+        '--text-shadow': textShadow,
+        display: 'flex',
+        justifyContent: position
+    };
+
     return (
-        <div className="jumpingText-container">
+        <div className={`jumpingText-container`} style={containerStyle}>
             <div className="jumpingText-buzzwords_container jumpingText-words jumpingText-words_trigger is-ready">
                 <div className="jumpingText-words_line jumpingText_lineTrigger is-ready">
                     {highlightOnLoad && <div className="jumpingText-barBefore"></div>}
@@ -65,7 +79,7 @@ const JumpingText = ({
                                 className="jumpingText-charWrapper jt_charTrigger"
                             >
                                 <div className="jumpingText-char">
-                                    {char}
+                                    {char === ' ' ? '\u00A0' : char}
                                 </div>
                             </div>
                         ))}
