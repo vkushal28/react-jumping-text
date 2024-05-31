@@ -1,32 +1,27 @@
 {
-  "name": "react-jumping-text",
-  "version": "1.0.5",
-  "description": "A npm package that allows the texts to animate like jumping when hovered, or on initial load",
+  "name": "demo",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx rollup -c"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "Kushal Verma <mail@kushalverma.connect@gmail.com> (https://github.com/vkushal28)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vkushal28/react-jumping-text/issues"
-  },
-  "homepage": "https://github.com/vkushal28/react-jumping-text#readme",
-  "devDependencies": {
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@types/react": "^18.2.58",
+  "dependencies": {
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rollup": "^4.18.0",
-    "rollup-plugin-postcss": "^4.0.2",
-    "tslib": "^2.6.2"
+    "react-jumping-text": "^1.0.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vkushal28/react-jumping-text.git"
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
   }
 }
