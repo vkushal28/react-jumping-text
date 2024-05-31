@@ -44,7 +44,7 @@ Bugs are logged using the github issue system. To report a bug, simply [open a n
 https://github.com/vkushal28/react-jumping-text/assets/17496336/33b82000-d9d8-4ca1-8281-fd6b281ee66a
 
 ## Authors
-* **Kushal Verma** - *Portfolio* - [here](https://thebeardydeveloper.com](https://kushalverma.vercel.app/))
+* **Kushal Verma** - *Portfolio* - [here](https://kushalverma.vercel.app/)
 
 ## References
 - ChatGPT - for obvious reasons
