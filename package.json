@@ -9,7 +9,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx rollup -c"
   },
-  "keywords": [],
+  "keywords": [
+    "react-component",
+    "react",
+    "letters",
+    "ui",
+    "user interface",
+    "css animation",
+    "css",
+    "frontend",
+    "framework"
+  ],
   "author": "Kushal Verma <mail@kushalverma.connect@gmail.com> (https://github.com/vkushal28)",
   "license": "ISC",
   "bugs": {
