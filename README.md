@@ -35,6 +35,8 @@ This is my first contribution to npm package :)
 Would love you all to contribute to this project, just fork the repo, add your creativity and submit a PR ❤️ :)
 
 ## Visuals
+https://github.com/vkushal28/react-jumping-text/assets/17496336/33b82000-d9d8-4ca1-8281-fd6b281ee66a
+
 
 
 ## Authors
